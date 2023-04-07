@@ -1,10 +1,10 @@
 pipeline {
-  agent { label ''}
+  agent { label 'JDK_TF'}
 
   stages {
     stage ('build') {
       steps {
-        git url: "",
+        git url: "https://github.com/Supriya-Battula/Jenkins_tf.git",
         branch: 'main'
       }
     }
